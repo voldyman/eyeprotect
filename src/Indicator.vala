@@ -2,7 +2,7 @@ using Gtk;
 using AppIndicator;
 
 public class Indicator : Object {
-	private const string ICON_NAME = "system-shutdown";
+	private const string ICON_NAME = "indicator-icon";
 	private iProtectApplication app;
 
 	private AppIndicator.Indicator ind;
@@ -19,8 +19,8 @@ public class Indicator : Object {
 	public Indicator (iProtectApplication app) {
 		this.app = app;
 
-		ind = new AppIndicator.Indicator (_("iProtect"), ICON_NAME,
-												IndicatorCategory.APPLICATION_STATUS);
+		ind = new AppIndicator.Indicator.with_path (_("iProtect"), ICON_NAME,
+													IndicatorCategory.APPLICATION_STATUS, Build.PKGDATADIR);
 		ind.set_status (IndicatorStatus.ACTIVE);
 
 		active = app.settings.activate_on_start;

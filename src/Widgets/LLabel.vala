@@ -31,7 +31,7 @@ public class LLabel : Gtk.Label {
 		"<b><span font='Ubuntu Bold %d' foreground='white'>%s</span></b>";
 	FontSize fs;
 	string text;
-	
+
 	public LLabel (string ltext, FontSize fsize = FontSize.SMALL) {
 		set_use_markup (true);
 		fs = fsize;		text = ltext;
@@ -57,4 +57,3 @@ public class LLabel : Gtk.Label {
 	}
 
 }
-
