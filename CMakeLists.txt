@@ -1,4 +1,4 @@
-project (i-protect)
+project (eyeprotect)
 
 cmake_minimum_required (VERSION 2.6)
 
@@ -6,9 +6,9 @@ list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
 set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
 
-set (PKGDATADIR "${DATADIR}/i-protect")
-set (EXEC_NAME "i-protect")
-set (GETTEXT_PACKAGE "i-protect")
+set (PKGDATADIR "${DATADIR}/eyeprotect")
+set (EXEC_NAME "eyeprotect")
+set (GETTEXT_PACKAGE "eyeprotect")
 set (RELEASE_NAME "netra")
 set (VERSION "0.1")
 set (VERSION_INFO "Initial release")
@@ -31,7 +31,7 @@ add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
 
 include(ValaPrecompile)
 vala_precompile(VALA_C ${EXEC_NAME}
-    src/iProtect.vala
+    src/eyeProtect.vala
     src/Settings.vala
     src/Indicator.vala
     src/config.vala

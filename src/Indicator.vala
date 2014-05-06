@@ -3,7 +3,7 @@ using AppIndicator;
 
 public class Indicator : Object {
 	private const string ICON_NAME = "indicator-icon";
-	private iProtectApplication app;
+	private eyeProtectApplication app;
 
 	private AppIndicator.Indicator ind;
 	private CheckMenuItem activate_item;
@@ -16,10 +16,10 @@ public class Indicator : Object {
 
 	private uint timer_id;
 
-	public Indicator (iProtectApplication app) {
+	public Indicator (eyeProtectApplication app) {
 		this.app = app;
 
-		ind = new AppIndicator.Indicator.with_path (_("iProtect"), ICON_NAME,
+		ind = new AppIndicator.Indicator.with_path (_("eyeProtect"), ICON_NAME,
 													IndicatorCategory.APPLICATION_STATUS, Build.PKGDATADIR);
 		ind.set_status (IndicatorStatus.ACTIVE);
 

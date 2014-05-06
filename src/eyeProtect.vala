@@ -1,25 +1,25 @@
 /**
  * Copyright 2014 Akshay Shekher
  *
- * This file is part of iProtect.
+ * This file is part of eyeProtect.
  *
- * iProtect is free software: you can redistribute it
+ * eyeProtect is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
  *
- * iProtect is distributed in the hope that it will be
+ * eyeProtect is distributed in the hope that it will be
  * useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
  * Public License for more details.
  *
  * You should have received a copy of the GNU General Public License along
- * with iProtect. If not, see http://www.gnu.org/licenses/.
+ * with eyeProtect. If not, see http://www.gnu.org/licenses/.
  *
  * Author: Akshay Shekher <voldyman666@gmail.com>
  */
 
-public class iProtectApplication : Granite.Application {
+public class eyeProtectApplication : Granite.Application {
 
     public  Settings settings { get; private set; default = null; }
 //    public static Gtk.IconTheme icon_theme { get; set; default = null; }
@@ -33,7 +33,7 @@ public class iProtectApplication : Granite.Application {
         build_version = Build.VERSION;
         build_version_info = Build.VERSION_INFO;
 
-        program_name = "iProtect";
+        program_name = "eyeProtect";
 	    exec_name = "i-protect";
 	    app_copyright = "GPLv3";
 	    app_icon = "";
@@ -48,7 +48,7 @@ public class iProtectApplication : Granite.Application {
         about_license_type = Gtk.License.GPL_3_0;
     }
 
-    public iProtectApplication () {
+    public eyeProtectApplication () {
         settings = new Settings ();
     }
 
@@ -58,7 +58,7 @@ public class iProtectApplication : Granite.Application {
     }
 
     public static int main (string[] args) {
-        var app = new iProtectApplication ();
+        var app = new eyeProtectApplication ();
 
         return app.run (args);
     }

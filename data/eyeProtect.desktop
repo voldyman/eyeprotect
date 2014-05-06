@@ -1,11 +1,11 @@
 [Desktop Entry]
-Name=iProtect
-GenericName=iProtect
+Name=eyeProtect
+GenericName=eyeProtect
 Comment=A utility to save your eyes from yourself.
 Categories=GTK;Utility;
 Exec=i-protect
 Icon=application-default-icon
 Terminal=false
 Type=Application
-X-GNOME-Gettext-Domain=i-protect
+X-GNOME-Gettext-Domain=eyeprotect
 X-GNOME-Keywords=eye;protect;iprotect;
