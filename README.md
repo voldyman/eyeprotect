@@ -1,4 +1,4 @@
-iProtect
+eyeProtect
 --------
 A Gtk+ application that uses the 20-20-20 rule to protect your eyes from damage.
 
@@ -14,10 +14,10 @@ Depencies:
 To build:
 
     $ git clone git@github.com:voldyman/iprotect.git
-    $ cd iprotect
+    $ cd eyeprotect
     $ mkdir build
     $ cmake .. && make
-    $ ./iprotect
+    $ ./eyeprotect
     
 ##Todo
 - Add the ability to start on boot
